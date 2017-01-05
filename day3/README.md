@@ -174,7 +174,7 @@ In the worst case, the performance is the same as selection sort, O(n<sup>2</sup
 
 There are many other sorting algorithms, including several that achieve a better running time than O(n<sup>2</sup>). In practice, we would always use one of those over insertion sort or selection sort. We won't look at alternative methods because they're more complicated, and it's not our main goal here. We just want to introduce you to two possible algorithms.
 
-### Conclusions on searching and sorting algorithms
+## Conclusions on searching and sorting algorithms
 
 Algorithm design is an important part of computer science. You can take an entire class on this subject!
 
