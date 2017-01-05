@@ -239,8 +239,6 @@ All this means is that the algorithms we have talked about are O(n<sup>b</sup>) 
 
 ## Lab 3
 
-### Part 1
-
 Now we're going to practice making objects. We're going to make an object that's like a shopping cart. Our shopping cart will be very simple, and will allow you to put items in and take items out. In addition to keeping track of the items in the basket, the class will also record each item's price, and the total price of the items in the cart.
 
 Guidelines:

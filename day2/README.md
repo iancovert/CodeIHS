@@ -55,9 +55,7 @@ Consider a routine that takes a number, and determines if the number is prime. W
 
 # Lab 2
 
-## Part 1
-
-First, we're going to practice writing functions. Write a function called prime, that determines if a number is prime.
+We're going to practice writing functions. Write a function called prime, that determines if a number is prime.
 
 Hints:
 
