@@ -21,9 +21,9 @@ for i in range(10):
 
 # How does this work?
 x = range(10)
-print(x)
-# Range(n) creates a list. In our for loops, i takes on the values 0, 1, 
-# 2, 3, ... in each iteration of the loop. 
+print(list(x))
+# Range(n) creates a list. In our for loops, i takes on the values 0, 1,
+# 2, 3, ... in each iteration of the loop.
 
 # NOTE: notice that the last value, 10, was omitted. That's because of how
 # range() works
