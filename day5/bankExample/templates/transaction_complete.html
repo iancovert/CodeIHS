@@ -1,0 +1,6 @@
+{% if result == "Success" %}
+	<h1>Transaction complete!</h1>
+{% else %}
+	<h1>Transaction failed</h1>
+	<p>Error message: {{result}}</p>
+{% endif %}

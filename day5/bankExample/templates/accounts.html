@@ -1,0 +1,10 @@
+<h1>Welcome to the {{bank.name}}</h1>
+
+<h2>The bank has the following accounts:</h2>
+
+{% for account in bank.accounts %}
+	<div>
+		<h3>{{account.name}}</h3>
+		<p>Balance: {{account.credit}}<p>
+	</div>
+{% endfor %}
