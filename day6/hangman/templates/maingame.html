@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+</head>
+<body>
+
+<img src="/static/hangman_{{ hangman_step }}.png">
+
+<h2>{{ hangman_word }}</h2>
+<p>You've guessed the letters:</p>
+<p>{{ hangman_letters }}</p>
+
+{% if game_won %}
+    <h1>You won!</h1>
+{% elif game_lost %}
+    <h1>You lost! The word was: {{ hangman_real_word }}</h1>
+{% else %}
+    <form action="/" method="POST">
+        <p>Guess some letters: </p>
+        <div><input type="text" name="guess"><input type="submit"></div>
+    </form>
+{% endif %}
+
+</body>
+</html>
