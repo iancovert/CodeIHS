@@ -15,7 +15,7 @@ Control flow is the concept of telling the computer which line to execute next. 
 - While loops (continue executing until a condition is satisfied)
 
 ### Notes on control flow tools 
-- If statements and while loops both rely on **boolean expressions** (see day 1 notes)
+- If statements and while loops both rely on **boolean expressions** (see day 1 notes).
 - For loops rely instead on a **list**, and each iteration corresponds to an element in the list.
 - Be careful with indentation. Always use the tab key to maintain alignment.
 
@@ -48,7 +48,7 @@ Consider a routine that takes a number, and determines if the number is prime. W
 
 - Created using the keyword **def**
 - Can take multiple arguments, and arguments can have names of your choice
-- Last line often uses keyword return to pass a value to the caller of the function
+- Last line often uses keyword **return** to pass a value to the caller of the function
 - Be careful with indentation
 
 

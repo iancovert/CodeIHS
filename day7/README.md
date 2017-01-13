@@ -1,14 +1,16 @@
 # Day 7
 
-Today we discuss run time and algorithms. We'll cover basic searching and sorting algorithms, and relate some of our conclusions to the data structures we discussed in an earlier session.
+Today we discussrun time and algorithms. We'll cover basic searching and sorting algorithms, and relate some of our conclusions to the data structures we discussed in an earlier session.
 
-We'll close by showing demonstrations from advanced topics in computer science. 
+We'll close by showing demonstrations from a couple of advanced topics in computer science. 
 
 ## Run time
 
 #### Definition
 
 An algorithm's run time is the number of computational steps it takes to reach a result. For example, for a search algorithm, the run time would be the number of computational steps until the target is located, or until it is certain that the target is not in the list.
+
+You might be thinking, why don't we define runtime in units of time? That wouldn't work because the number of seconds taken for a program to run is dependent not only on the algorithm, but on the computer that's running it. The number of computational steps is a universal way of analyzing algorithmic efficiency.
 
 #### Run time as a function of input size
 
@@ -32,11 +34,11 @@ The general rule is we **omit constant coefficients**, and we ignore everything 
 
 ## Search algorithms
 
-For simplicity, consider the scenario where we have a list containing a sequence of n ints. The methods we describe can be generalized to other data types (including strings and objects).
+For simplicity, consider the scenario where we have a list containing a sequence of n ints. Don't worry, the methods we describe can be generalized to other data types (including strings and objects).
 
 ### Sequential search
 
-What's the first thing you would try when searching for an int in a list of ints? Look at the one at a time! That's the logic behind sequential search. 
+What's the simplest thing you would try when searching for an int in a list of ints? Look at them one at a time! That's the logic behind sequential search. 
 
 #### Definition of pseudocode
 
@@ -79,7 +81,7 @@ In the scenario where we have a list of ints, we can do the same thing.
 
 #### Running time
 
-Consider a scenario where the target element is not in the list. The algorithm terminates when the region where the element might reside becomes just a single element (only then can the algorithm be sure that the target is not in the list).
+Consider a scenario where the target element is not in the list. The algorithm terminates when the region where the element might reside becomes just a single element, because only then can the algorithm be sure that the target is not in the list.
 
 Let's call the *feasible region* the region of the list where the element might reside. Initially, the whole list is the feasible region. After checking the midpoint, either the left half or the right half (minus the middle element) becomes the feasible region. Etc.
 
@@ -140,7 +142,7 @@ In the worst case, the performance is the same as selection sort, O(n<sup>2</sup
 
 ### Other sorting algorithms
 
-There are many other sorting algorithms, including several that achieve a better running time than O(n<sup>2</sup>). In practice, we would always use one of those over insertion sort or selection sort. We won't look at alternative methods because they're more complicated, and it's not our main goal here. We just want to introduce you to two possible algorithms.
+There are many other sorting algorithms, including several that achieve a better running time than O(n<sup>2</sup>). In practice, we would always use one of those over insertion sort or selection sort. We won't look at alternative methods because they're more complicated, and it's not our main goal here.
 
 ### Conclusions on searching and sorting algorithms
 

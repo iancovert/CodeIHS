@@ -1,16 +1,19 @@
 # Day 4
+
+Today we'll discuss data structures. We'll go over why we need them, discuss how we choose a data structure for a given problem, and implement a couple of data structures together.
+
 ## Data Structures
 
-Data structures are, intuitively, any way of manipulating data efficiently on a computer. We study what data structures are best suited to the task at hand by analyzing their speed (read *Runtime*) and implementation. We will talk about three data structures today: 
+Data structures are, intuitively, any way of manipulating data efficiently on a computer. We discuss which data structures are best suited to various tasks by analyzing their speed (read *runtime*) and implementation. We will talk about three data structures today: 
 
 - Stacks
 - Linked Lists
 - Trees
 
 ### Stacks
-A stack is a data structure for when we only care about the most recent thing we put into the data structure, as such they must be able to efficiently add something, and then remove that thing. More precisely stacks implement what is called the First-in-Last-out principle, meaning if you put A, B, and C into a stack, then request three objects, you will first get C, then B, then A, at which point the stack is empty.
+A stack is a data structure for when we only care about the most recent thing we put into the data structure. As such they must be able to efficiently add something, and then remove that thing. More precisely stacks implement what is called the First-in-Last-out principle, meaning if you put A, B, and C into a stack, then request three objects, you will first get C, then B, then A, at which point the stack is empty.
 
-Example stack functions (notice python lists make it easy to implement these functions, but this isn't true in all programming languages):
+Example stack functions (notice that Python lists make it easy to implement these functions, but this isn't true in all programming languages):
 
 ```python
 class Stack:

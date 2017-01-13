@@ -16,7 +16,7 @@ Imagine a graph containing nodes and edges, where each computer is a node, and c
 
 This is basically how computer networks work. The edges connecting computers can work in different ways. Your computer is probably connected to a device through WiFi, but it could also be connected using an ethernet cable. 
 
-Most communications over computer networks eventually go through physical cables. There are different kinds of physical cables, and some modern ones are built to transmit information very quickly - near the speed of light. Don't be fooled by the fact that you only ever deal with WiFi: physical cables are an essential part of how computer networks function. 
+Most communications over computer networks eventually go through physical cables. There are different kinds of physical cables, and some modern ones are built to transmit information very quickly – nearly at the speed of light. Don't be fooled by the fact that you only ever deal with WiFi: physical cables are an essential part of how computer networks function. 
 
 ## The internet
 
@@ -40,13 +40,13 @@ When you type a domain name into your browser, your browser contacts a nearby *D
 
 ### IP addresses
 
-Every computer connected to the internet has an *IP address*. Think of this like a physical mailing address: when you want to send someone mail, you need to know their address. The name of their neighborhood (an anology for the website's domain name) does not give a precise sense of their location.
+Every computer connected to the internet has an *IP address*. Think of this like a physical mailing address: when you want to send someone mail, you need to know their address. The name of their neighborhood (our anology for the website's domain name) does not give a precise sense of their location.
 
 ### Port numbers
 
 Each computer connected to the internet has a single IP address, but many *port numbers*. Think of this as an apartment number. The IP address is like the building address for where you want to send your mail, but you must indicate who exactly within the apartment building should receive the mail.
 
-Generally, the port number is used to indicate which application should see the data. Web page communications have their own port number, as does email, various services operated by companies (AOL, Microsoft, Apple), etc. The port number used by the protocol for sending and delivering websites is 80.
+Generally, the port number is used to indicate which application should see the data. Website-related communications have their own port number, as does email, various services operated by companies (AOL, Microsoft, Apple), etc. The port number used by the protocol for sending and delivering websites is 80.
 
 ### Application protocols
 
@@ -54,7 +54,7 @@ Now that you have domain names, IP addresses and port numbers, you essentially h
 
 A *application protocol* gives a precise pattern for how two computers should interact with one another for a certain application. There are precise protocols that dictate how clients should make requests to servers.
 
-There's a specific pattern of communication that's used for websites, called HTTP (hypertext transfer protocol). Basically, the client sends a request to the server, and the server responds by sending the relevant files. This kind of request from the client is called an *HTTP get request*.
+There's a specific pattern of communication that's used for website-related requests, called **HTTP** (hypertext transfer protocol). Basically, the client sends a request to the server, and the server responds by sending the relevant files. This kind of request from the client is called an *HTTP get request*.
 
 A request might look like this:
 
@@ -87,5 +87,5 @@ Luckily, there are tools available that make this very easy. Flask is one of the
 We demonstrate the following:
 
 - Responding to a request with raw text
-- Responding to a request with a plain HTML file
+- Responding to a request with a simple HTML file
 - Responding to a request with an HTML file with inline CSS stylesheet
